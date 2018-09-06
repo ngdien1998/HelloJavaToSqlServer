@@ -48,4 +48,9 @@ public class Category {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Category id: %d, Name: %s, Order no: %d, Status: %s", categoryId, categoryName, orderNo, status);
+    }
 }
