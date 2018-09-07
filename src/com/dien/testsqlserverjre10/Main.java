@@ -24,9 +24,13 @@ public class Main {
                 user.setAllowed(res.getBoolean(7));
                 System.out.println(user);
             }
+            res.close();
+            statement.close();
+            conn.close();
+
             System.out.println("Done");
         } catch (SQLException e) {
-            System.out.println(e);
+            System.out.println(e.getMessage());
         }
     }
 }
