@@ -1,6 +1,7 @@
 package com.dien.testsqlserverjre10.models;
 
 public class Admin {
+
     private String username;
     private String password;
     private String fullname;
